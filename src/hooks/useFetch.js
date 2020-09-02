@@ -7,7 +7,6 @@ const useFetch = () => {
 
   useEffect(() => {
     handleSearchResult("Pasta");
-    console.log(results);
   }, []);
 
   const handleSearchResult = async (searchVal) => {
@@ -24,6 +23,7 @@ const useFetch = () => {
       console.log("done");
     } catch (err) {
       setErrorMessage("Something went wrong..");
+      setTimeout(() => setErrorMessage(""), 3000);
     }
   };
 

@@ -42,7 +42,6 @@ function SearchBar({ value, onChangeVal, deleteValue, onSubmit }) {
 
   return (
     <View style={style.background}>
-      {console.log(value)}
       {renderSearchIcon()}
       {renderInputText()}
       {renderDeleteIcon()}
@@ -55,7 +54,7 @@ const style = StyleSheet.create({
     backgroundColor: "#e0dcdc",
     height: 50,
     marginTop: 16,
-    marginBottom: 16,
+    marginBottom: 10,
     marginHorizontal: 15,
     borderRadius: 5,
     flexDirection: "row",
